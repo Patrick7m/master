@@ -3,27 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.scss?v=' | append: site.github.build_revision | relative_url }}">
-  <link rel="stylesheet" type="text/css"
-          href="https://fonts.googleapis.com/css?family=OpenSans">
-    <style>
-      body {
-        font-family: 'OpenSans', serif;
-        font-size: 48px;
-      }
     <meta name="viewport" content="width=device-width">
  
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
 Patrick McCabe
-        {% if site.github.is_user_page %}
-     
-        {% endif %}
-
-        {% if site.show_downloads %}
           <ul>
             <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
             <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
@@ -31,6 +17,14 @@ Patrick McCabe
           </ul>
         {% endif %}
       </header>
+      <link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=OpenSans">
+    <style>
+      body {
+        font-family: 'OpenSans', serif;
+        font-size: 48px;
+      }
+      Patrick McCabe
       <section>
 
       {{ content }}
